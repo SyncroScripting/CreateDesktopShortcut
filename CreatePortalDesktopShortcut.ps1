@@ -19,7 +19,7 @@ Please note that the following variables need to be configured in Syncro (see sc
 $subdomain = "your_subdomain"
 
 $WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$home\Desktop\VITAL_Tech_SupportPortal.lnk")
+$Shortcut = $WshShell.CreateShortcut("$home\Desktop\Tech_SupportPortal.lnk")
 $urlpart2 = Get-ItemProperty -Path HKLM:\SOFTWARE\Wow6432Node\RepairTech\Syncro -Name "UUID"
 $urlpart3 = $urlpart2.uuid
 $shortcut.IconLocation= "C:\ProgramData\Syncro\Images\logo.ico"
